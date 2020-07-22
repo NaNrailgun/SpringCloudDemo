@@ -21,6 +21,8 @@
     <modules>
         <module>eureka-server</module>
         <module>service-hi</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
     <properties>
