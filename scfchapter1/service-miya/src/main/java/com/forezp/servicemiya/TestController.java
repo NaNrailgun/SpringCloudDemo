@@ -1,4 +1,4 @@
-package com.forezp.servicehi;
+package com.forezp.servicemiya;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,8 +41,9 @@ public class TestController {
 
     @GetMapping("/info")
     public String info(){
-        log.log(Level.INFO, "calling trace service-hi  ");
-        return restTemplate.getForObject("http://localhost:8777/info", String.class);
+        log.log(Level.INFO, "hi is being called");
+        return restTemplate.getForObject("http://localhost:8762/hi?name=miya",String.class);
     }
 
 }
+
